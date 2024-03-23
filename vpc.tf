@@ -47,7 +47,7 @@ resource "aws_route_table_association" "subnet2_route" {
 
 resource "aws_security_group" "security_group" {
   name   = "ecs-security-group"
-  vpc_id = aws_vpc.main.id
+  vpc_id = aws_vpc.IT-nuggets-ecs.id
 
   ingress {
     from_port   = 0
