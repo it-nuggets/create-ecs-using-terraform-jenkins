@@ -1,5 +1,5 @@
 resource "aws_security_group" "sg" {
-  name   = "sg-ecs"
+  name   = "ecssg"
   vpc_id = aws_vpc.IT-nuggets-ecs.id
 
   ingress {
